@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+body {
+    /* font-family: "Yeseva One", serif; */
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top-section {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        height: 200%;
+    }
+    .top-right {
+        position: relative;
+        right: 100px;
+        select {
+            width: 140px;
+            height: 40px;
+            background: none;
+            border-radius: 7px;
+            color: #ffff;
+            text-align: center;
+            option {
+                color: black;
+                background: #d60909;
+            }
+        }
+        svg {
+            position: relative;
+            left: 30px;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px 40px;
+            color: #ffff;
+            height: 40px;
+            background-color: rgb(214, 9, 9);
+            border: none;
+            border-radius: 7px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        a:hover {
+           background-color: #a90000;
+        }
+    }
+}
+.sign-in {
+    /* visibility: hidden; */
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left, black, transparent), url("bg-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    form {
+        height: 80vh;
+        width: 450px;
+        background: rgba(33, 33, 33, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        color: #ffff;
+        border: 1px #b6b3b3 solid;
+
+        input {
+            height: 40px;
+            color: #b6b3b3;
+            width: 80%;
+            font-size: 1rem;
+        }
+
+        input[type='submit'] {
+            border: none;
+            width: 81%;
+            background-color: rgb(214, 9, 9);
+            color: #ffff;
+            border-radius: 5px;
+        }
+
+        input[type='button']:hover {
+            background-color: #a90000;
+        }
+
+        input[type='text'],
+        input[type='password'] {
+            background: transparent;
+            border: 1px rgb(120, 115, 115) solid;
+            border-radius: 5px;
+        }
+
+       
+
+        input:focus {
+            outline: none;
+        }
+
+        .check {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            right: 100px;
+            gap: 10px;
+
+            input {
+                width: unset;
+            }
+        }
+
+        a {
+            /* text-decoration: none; */
+            color: #ffff;
+        }
+    }
+}
+::placeholder {
+    color: #b6b3b3;
+    font-size: 1rem;
+}
+.home-content{
+    height: 60vh;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffff;
+    gap: 15px;
+    h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .get-started{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        input{
+            width: 60%;
+            height: 50px;
+            background: transparent;
+            border: #ffff 1px solid;
+            border-radius: 5px;
+            color: #ffff;
+            font-size: 1rem;
+        }
+        button{
+            height: 55px;
+            font-size: 1rem;
+            width: 150px;
+            border: none;
+            background-color: rgb(214, 9, 9);
+            color: #ffff;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: rgb(169, 0, 0);
+        }
+    }
+}
